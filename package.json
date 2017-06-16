@@ -14,7 +14,6 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "get-twitter-bearer-token": "^1.0.0",
-    "i": "^0.3.5",
     "nunjucks": "^3.0.1",
     "twitter": "^1.7.1"
   },

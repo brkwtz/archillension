@@ -46,3 +46,7 @@ app.get('/archillect', (req, res, next) => {
     res.send(tweet[0].entities.media[0].media_url)
   })
 })
+
+app.get('/', (req, res, next) => {
+  res.render('index')
+})
