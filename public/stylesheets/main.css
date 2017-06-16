@@ -1,13 +1,38 @@
 body {
-  height: 100vh;
   width: 100vw;
-  background-size: contain;
+  height: 100vh;
+/*  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+*/
   background-color: #fafafa;
   font-family: 'Inconsolata';
 }
 
+div.col-xs-4 {
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+img, video {
+  height: 100vh;
+  flex: none;
+}
+
 a {
   text-decoration: none;
+  color: #fafafa;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.source {
+  position: absolute;
+  z-index: 1;
 }
