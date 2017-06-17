@@ -1,0 +1,23 @@
+body {
+  width: 200px;
+  height: 100px;
+  background-color: #fafafa;
+  font-family: 'Inconsolata';
+  justify-content: center;
+}
+
+a {
+  background-color: #212121;
+  color: white;
+  width: 8px;
+  height: 8px;
+  line-height: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: gray;
+}

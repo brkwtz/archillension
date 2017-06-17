@@ -1,9 +1,8 @@
 node_modules
 secrets.js
 views/videotest.html
-manifest.json
-popup.html
-popup.js
 public/testvideo.webm
 icon.png
 .DS_Store
+extension.pem
+extension.zip
