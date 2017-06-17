@@ -22,14 +22,18 @@ img, video {
   flex: none;
 }
 
-a {
-  text-decoration: none;
-  color: #fafafa;
-}
-
 a:hover {
   text-decoration: none;
   color: black;
+}
+
+img:hover, video:hover {
+  opacity: 0.75;
+}
+
+a {
+  text-decoration: none;
+  color: #fafafa;
 }
 
 .source {

@@ -42,6 +42,7 @@ function processTwitterResponse(tweet) {
   let tweets = []
   for(let i = 0; i < 3; i++) {
     let responseObject = {}
+    responseObject.source = tweet[i].text
     if (tweet[i].extended_entities.media[0].type === 'photo') {
       responseObject.type = 'image'
       responseObject.url = tweet[i].entities.media[0].media_url
@@ -51,6 +52,8 @@ function processTwitterResponse(tweet) {
     }
     tweets.push(responseObject)
   }
+  // use below to test video functionality
+  // tweets[2] = {type: 'video', url: 'https://video.twimg.com/tweet_video/DCd-eANWAAQoKi8.mp4', source: 'https://t.co/uCDzXTSJOe'}
   return tweets
 }
 
