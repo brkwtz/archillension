@@ -40,14 +40,12 @@ app.get('/twitterhookedup', (req, res, next) => {
 
 function processTwitterResponse(tweet) {
   let tweets = []
-
   for(let i = 0; i < 3; i++) {
     let responseObject = {}
-
-    if (tweet[i].entities.media[0].type === 'photo') {
+    if (tweet[i].extended_entities.media[0].type === 'photo') {
       responseObject.type = 'image'
       responseObject.url = tweet[i].entities.media[0].media_url
-    } else {
+    } else if (tweet[i].extended_entities.media[0].type === 'animated_gif') {
       responseObject.type = 'video'
       responseObject.url = tweet[i].extended_entities.media[0].video_info.variants[0].url
     }

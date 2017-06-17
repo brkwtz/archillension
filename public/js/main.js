@@ -5,8 +5,6 @@ $(function() {
     type: 'GET',
     url: '/archillect',
     success: function(media) {
-      console.log('blahhhh')
-      console.log(media)
       for(let i = 0; i < media.length; i++) {
         if(media[i].type === 'image') {
           $('#image'+[i]).append('<img src='+ media[i].url + '></img>')
